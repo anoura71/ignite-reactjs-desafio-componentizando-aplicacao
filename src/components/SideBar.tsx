@@ -10,9 +10,9 @@ import '../styles/sidebar.scss';
 
 interface SideBarProps {
   genres: GenreResponseProps[];
-  setGenres: (genres: GenreResponseProps[]) => void;
-  setMovies: (movies: MovieProps[]) => void;
-  setSelectedGenre: (genre: GenreResponseProps) => void;
+  setGenres(genres: GenreResponseProps[]): void;
+  setMovies(movies: MovieProps[]): void;
+  setSelectedGenre(genre: GenreResponseProps): void;
 }
 
 
