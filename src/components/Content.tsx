@@ -1,18 +1,19 @@
-import { MovieProps } from '../App';
+import { GenreResponseProps, MovieProps } from '../App';
 import { MovieCard } from './MovieCard';
 
 import '../styles/content.scss';
 
 
 interface ContentProps {
-  selectedGenre: {
-    title: string;
-  },
+  selectedGenre: GenreResponseProps,
   movies: MovieProps[];
 }
 
 
-export function Content({ selectedGenre, movies }: ContentProps) {
+export function Content({
+  selectedGenre,
+  movies,
+}: ContentProps) {
 
 
   return (
